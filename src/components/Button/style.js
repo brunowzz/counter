@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../devices";
 
 export const ButtonStyle = styled.button`
   width: 200px;
@@ -18,5 +19,10 @@ export const ButtonStyle = styled.button`
 
   &:active {
     background: #00a83b;
+  }
+
+  @media ${device.tablet} {
+    width: 150px;
+    height: 40px;
   }
 `;
